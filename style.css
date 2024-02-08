@@ -77,6 +77,8 @@ nav > ul > li > a{
     border: 1px solid #2294ED;
 }
 
+/* media query */
+
 @media screen and (max-width:1024px){
         .nav-img{
             height: 50px;
