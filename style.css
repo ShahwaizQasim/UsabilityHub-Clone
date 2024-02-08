@@ -9,15 +9,18 @@
                                    /* topbar */
 
 .top-bar{
-    height: auto;
+    height: 50px;
     background-image: url(./images/asset\ 28.png);
     background-size: 300px;
     background-color: #E74694;
 }
+.top-bar-text{
+    margin: auto;
+}
 .top-bar-text > p{
     color: white;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 10px;
 } 
 
                                       /* navbar */
@@ -27,7 +30,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 .nav-img{
     height: 60px;
@@ -39,7 +41,6 @@ nav >ul{
    display: flex;
    gap: 30px;
    align-items: center;
-   flex-wrap: wrap;
 }
 nav > ul > li{
     list-style-type: none;
@@ -76,11 +77,120 @@ nav > ul > li > a{
     border: 1px solid #2294ED;
 }
 
+@media screen and (max-width:1024px){
+        .nav-img{
+            height: 50px;
+        }
+        .nav-img > a >img{
+            height: 35px;
+        }
+        nav > ul{
+            gap: 20px;
+            font-size: 14px;
+        }
+        .nav-btn{
+            height: 45px;
+            width: 80px;
+            font-size: 14px;
+        }
+        .nav-btn1{
+            height: 45px;
+            width: 80px;
+            font-size: 14px;
+        }
+        nav > ul > li > a{
+            font-size: 16px;
+        }
+}
+@media only screen and (max-width:800px){
+    .top-bar{
+        height: 40px;
+    }
+    .top-bar-text > p{
+        font-size: 14px;
+    }
+    .nav-img{
+        height: 40px;
+    }
+    .nav-img > a >img{
+        height: 25px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    nav > ul > li > a{
+        font-size: 14px;
+    }
+    .nav-btn{
+        height: 35px;
+        width: 70px;
+        font-size: 12px;
+    }
+    .nav-btn1{
+        height: 35px;
+        width: 70px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:600px){
+    .top-bar-text > p{
+        font-size: 12px;
+    }
+    .nav-img{
+        height: 45px;
+    }
+    .nav-img > a >img{
+        height: 20px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    nav > ul > li > a{
+        font-size: 12px;
+    }
+    .nav-btn{
+        height: 30px;
+        width: 60px;
+        font-size: 12px;
+    }
+    .nav-btn1{
+        height: 30px;
+        width: 60px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:500px){
+    .top-bar-text > p{
+        font-size: 10px;
+    }
+    .nav-img{
+        height: 30px;
+    }
+    .nav-img > a >img{
+        height: 20px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    nav > ul > li > a{
+        font-size: 10px;
+    }
+    .nav-btn{
+        height: 25px;
+        width: 50px;
+        font-size: 10px;
+    }
+    .nav-btn1{
+        height: 25px;
+        width: 50px;
+        font-size: 10px;
+    }
+}
+
+
 /* section1 */
 
 .content{
-    position: relative;
-    top: 100px;
     padding-bottom: 50px;
 }
 .content >h1{
@@ -113,6 +223,7 @@ nav > ul > li > a{
     height: 100%;
     width: 100%;
     padding-top: 10px;
+    margin: auto;
 }
 
 /* section2 */
@@ -124,8 +235,8 @@ nav > ul > li > a{
 }
 .content2 >img{
     height: 45px;
-    margin-left: 25px;
-    margin-top: 10px;
+   margin: auto !important;
+   margin-left: 25px !important;
 }
 
 /* section3 */
@@ -392,7 +503,7 @@ nav > ul > li > a{
     font-size: 18px;
 }
 .section8-columns-right{
-    height: auto;
+    height: 500px;
     margin-top: 40px !important;
     background-image: url(./images/asset\ 29.svg), url(./images/asset\ img.png);
     background-size: 20vw 38vh, 90% 99%;
@@ -404,7 +515,7 @@ nav > ul > li > a{
    position: relative;
    top: 220px;
    line-height: 10px !important;
-   font-size: 18px;
+   font-size: 14px;
 }
 .section9-container {
     height: auto;
